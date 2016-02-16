@@ -12,5 +12,5 @@
 */
 
 Route::get('/', 'PoopController@index');
-Route::get('/start', 'PoopController@start');
-Route::get('/stop', 'PoopController@stop');
+Route::post('/start', 'PoopController@start');
+Route::post('/stop', 'PoopController@stop');
