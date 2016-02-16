@@ -43,7 +43,10 @@ class PoopController extends BaseController
     public function start()
     {
         if ($this->poop->isPooping()) {
-            return "Can't start a new Poop. Stuart is still Pooping.";
+            return response()->json([
+                'response_type' => 'in_channel',
+                'text' => 'Can\'t start a new Poop. Stuart is still Pooping.'
+            ]);
         }
 
         $this->poop->create([
@@ -59,7 +62,10 @@ class PoopController extends BaseController
     public function stop()
     {
         if (!$this->poop->isPooping()) {
-            return "Can't stop a poop. Stuart is not currently Pooping.";
+            return response()->json([
+                'response_type' => 'in_channel',
+                'text' => 'Can\'t stop a poop. Stuart is not currently Pooping.'
+            ]);
         }
 
         $poop = $this->poop->currentPoop();
