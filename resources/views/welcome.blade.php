@@ -50,6 +50,7 @@
         <div class="container">
             <div class="content">
                 <div class="title">{{ $isPooping ? 'YES' : 'NO' }}</div>
+                @if(isset($mostRecentPoop))
                 <div class="previous">
                     Most recent poop: {{ $mostRecentPoop->end_at->diffForHumans() }} <br>
                     It took: {{ $mostRecentPoop->readableDuration() }}
@@ -58,6 +59,11 @@
                     His all-time record is: {{ $recordPoop->readableDuration() }} <br>
                     It occurred on: {{ $recordPoop->end_at->format('F jS Y') }}
                 </div>
+                @else
+                <div class="previous">
+                    NO POOPS RECORDED YET
+                </div>
+                @endif
             </div>
         </div>
     </body>
