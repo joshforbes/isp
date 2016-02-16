@@ -50,7 +50,7 @@ class PoopController extends BaseController
             'start_at' => time()
         ]);
 
-        return json_encode([
+        return response()->json([
             'response_type' => 'in_channel',
             'text' => 'Here we go, Stuart is going for the record!'
         ]);
@@ -68,7 +68,7 @@ class PoopController extends BaseController
         $poop->duration = $poop->end_at->timestamp - $poop->start_at->timestamp;
         $poop->save();
 
-        return json_encode([
+        return response()->json([
             'response_type' => 'in_channel',
             'text' => 'He is all done, that took ' . $poop->readableDuration()
         ]);
