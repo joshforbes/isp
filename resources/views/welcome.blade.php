@@ -43,6 +43,11 @@
 
             .world-record {
                 font-size: 30px;
+                margin-bottom: 50px;
+            }
+
+            .stats {
+                font-size: 30px;
             }
         </style>
     </head>
@@ -58,6 +63,11 @@
                 <div class="world-record">
                     His all-time record is: {{ $recordPoop->readableDuration() }} <br>
                     It occurred on: {{ $recordPoop->end_at->format('F jS Y') }}
+                </div>
+                <div class="stats">
+                    Lifetime Poops: {{ $lifetimePoops }} <br>
+                    Average Poop Time: {{ $averagePoopTime }}
+
                 </div>
                 @else
                 <div class="previous">

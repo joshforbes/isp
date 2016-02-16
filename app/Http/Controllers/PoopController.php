@@ -34,7 +34,9 @@ class PoopController extends BaseController
         return view('welcome', [
             'isPooping' => $isPooping,
             'mostRecentPoop' => $mostRecentPoop,
-            'recordPoop' => $recordPoop
+            'recordPoop' => $recordPoop,
+            'lifetimePoops' => $this->poop->allTimePoops(),
+            'averagePoopTime' => $this->poop->averagePoopTime()
         ]);
     }
 
@@ -48,7 +50,10 @@ class PoopController extends BaseController
             'start_at' => time()
         ]);
 
-        return 'Poop started';
+        return json_encode([
+            'response_type' => 'in_channel',
+            'text' => 'Here we go, Stuart is going for the record!'
+        ]);
     }
 
     public function stop()
@@ -63,6 +68,9 @@ class PoopController extends BaseController
         $poop->duration = $poop->end_at->timestamp - $poop->start_at->timestamp;
         $poop->save();
 
-        return 'Poop stopped';
+        return json_encode([
+            'response_type' => 'in_channel',
+            'text' => 'He is all done, that took ' . $poop->readableDuration()
+        ]);
     }
 }

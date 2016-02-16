@@ -60,4 +60,26 @@ class Poop extends Model
         return $this->whereNull('end_at')->first();
     }
 
+    public function allTimePoops()
+    {
+        return count($this->all());
+    }
+
+    public function averagePoopTime()
+    {
+        $poops = $this->all();
+        $count = count($poops);
+
+        $totalDuration = $poops->reduce(function($carry, $value) {
+            return $carry + $value->duration;
+        });
+
+        $average = $totalDuration / $count;
+
+        $seconds = $average % 60;
+        $minutes = floor(($average % 3600)/60);
+
+        return sprintf('%s minutes %s seconds', $minutes, $seconds);
+    }
+
 }
