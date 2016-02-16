@@ -17,8 +17,8 @@ class CreatePoopsTable extends Migration
 
             $table->integer('duration')->nullable();
 
-            $table->timestamp('start_at');
-            $table->timestamp('end_at')->nullable()->default(null);
+            $table->dateTime('start_at');
+            $table->dateTime('end_at')->nullable()->default(null);
 
             $table->timestamps();
 

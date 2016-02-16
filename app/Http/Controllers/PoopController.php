@@ -44,7 +44,9 @@ class PoopController extends BaseController
             return "Can't start a new Poop. Stuart is still Pooping.";
         }
 
-        $poop = $this->poop->create();
+        $this->poop->create([
+            'start_at' => time()
+        ]);
 
         return 'Poop started';
     }

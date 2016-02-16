@@ -21,12 +21,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="welcome.blade.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <file leaf-file-name="PoopController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PoopController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.57894737">
-              <caret line="54" column="82" selection-start-line="54" selection-start-column="82" selection-end-line="54" selection-end-column="82" />
-              <folding />
+            <state vertical-scroll-proportion="0.42791763">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="44" selection-end-column="9" />
+              <folding>
+                <element signature="e#40#81#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -44,13 +46,14 @@
         <option value="$PROJECT_DIR$/database/factories/ModelFactory.php" />
         <option value="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" />
         <option value="$PROJECT_DIR$/database/seeds/PoopsTableSeeder.php" />
-        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_poops_table.php" />
         <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/IsStillPoopingException.php" />
         <option value="$PROJECT_DIR$/app/Exceptions/IsNotCurrentlyPooping.php" />
         <option value="$PROJECT_DIR$/app/Poop.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/PoopController.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
+        <option value="$PROJECT_DIR$/config/app.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_poops_table.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PoopController.php" />
       </list>
     </option>
   </component>
@@ -237,6 +240,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="factories" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="isp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1038,19 +1055,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/PoopsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36842105">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-          <folding>
-            <marker date="1455590125000" expanded="true" signature="11:52" placeholder="..." />
-            <marker date="1455590125000" expanded="true" signature="91:251" placeholder="{...}" />
-            <marker date="1455590125000" expanded="true" signature="101:165" placeholder=" Run the database seeds. ..." />
-            <marker date="1455590125000" expanded="true" signature="193:249" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.42105263">
@@ -1076,33 +1080,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_poops_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31578946">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding>
-            <marker date="1455592786000" expanded="false" signature="11:94" placeholder="..." />
-            <marker date="1455592786000" expanded="true" signature="136:741" placeholder="{...}" />
-            <marker date="1455592786000" expanded="true" signature="146:206" placeholder=" Run the migrations. ..." />
-            <marker date="1455592786000" expanded="true" signature="233:594" placeholder="{...}" />
-            <marker date="1455592786000" expanded="true" signature="263:586" placeholder="..." />
-            <marker date="1455592786000" expanded="true" signature="301:585" placeholder="..." />
-            <marker date="1455592786000" expanded="true" signature="603:667" placeholder=" Reverse the migrations. ..." />
-            <marker date="1455592786000" expanded="true" signature="696:739" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15789473">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <marker date="1455592998000" expanded="false" signature="9:383" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Exceptions/Handler.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05263158">
@@ -1120,10 +1097,107 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.57894737">
+          <caret line="54" column="82" selection-start-line="54" selection-start-column="82" selection-end-line="54" selection-end-column="82" />
+          <folding>
+            <marker date="1455595992000" expanded="true" signature="21:1967" placeholder="..." />
+            <marker date="1455595992000" expanded="true" signature="32:1114" placeholder="..." />
+            <marker date="1455595992000" expanded="true" signature="196:1102" placeholder="..." />
+            <marker date="1455595992000" expanded="true" signature="221:266" placeholder="{...}" />
+            <marker date="1455595992000" expanded="true" signature="285:487" placeholder="{...}" />
+            <marker date="1455595992000" expanded="true" signature="512:682" placeholder="{...}" />
+            <marker date="1455595992000" expanded="true" signature="705:795" placeholder="{...}" />
+            <marker date="1455595992000" expanded="true" signature="816:901" placeholder="{...}" />
+            <marker date="1455595992000" expanded="true" signature="925:1010" placeholder="{...}" />
+            <marker date="1455595992000" expanded="true" signature="1038:1086" placeholder="{...}" />
+            <marker date="1455595992000" expanded="true" signature="1125:1959" placeholder="..." />
+            <marker date="1455595992000" expanded="true" signature="1157:1947" placeholder="..." />
+            <marker date="1455595992000" expanded="true" signature="1191:1932" placeholder="..." />
+            <marker date="1455595992000" expanded="true" signature="1347:1531" placeholder="..." />
+            <marker date="1455595992000" expanded="true" signature="1574:1764" placeholder="..." />
+            <marker date="1455595992000" expanded="true" signature="1825:1890" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17888889">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/PoopsTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.36842105">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+          <folding>
+            <marker date="1455590125000" expanded="true" signature="11:52" placeholder="..." />
+            <marker date="1455590125000" expanded="true" signature="91:251" placeholder="{...}" />
+            <marker date="1455590125000" expanded="true" signature="101:165" placeholder=" Run the database seeds. ..." />
+            <marker date="1455590125000" expanded="true" signature="193:249" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.15789473">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <marker date="1455592998000" expanded="false" signature="9:383" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.7105263">
+          <caret line="54" column="35" selection-start-line="54" selection-start-column="35" selection-end-line="54" selection-end-column="35" />
+          <folding>
+            <marker date="1455598327000" expanded="true" signature="15:8353" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="23:451" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="505:928" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="979:1395" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="1439:1863" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="1912:2351" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="2384:2815" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="2857:3278" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="3350:3844" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="3894:4326" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="4350:5966" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="4362:4422" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="5703:5757" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="5976:6390" placeholder="..." />
+            <marker date="1455598327000" expanded="true" signature="6412:8349" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_poops_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45080093">
+          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <marker date="1455598615000" expanded="false" signature="11:94" placeholder="..." />
+            <marker date="1455598615000" expanded="true" signature="136:739" placeholder="{...}" />
+            <marker date="1455598615000" expanded="true" signature="146:206" placeholder=" Run the migrations. ..." />
+            <marker date="1455598615000" expanded="true" signature="233:592" placeholder="{...}" />
+            <marker date="1455598615000" expanded="true" signature="263:584" placeholder="..." />
+            <marker date="1455598615000" expanded="true" signature="301:583" placeholder="..." />
+            <marker date="1455598615000" expanded="true" signature="601:665" placeholder=" Reverse the migrations. ..." />
+            <marker date="1455598615000" expanded="true" signature="694:737" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Poop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7860412">
-          <caret line="59" column="51" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+        <state vertical-scroll-proportion="0.42448512">
+          <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
           <folding>
             <marker date="1455593332000" expanded="true" signature="27:108" placeholder="..." />
             <marker date="1455593332000" expanded="true" signature="134:1123" placeholder="{...}" />
@@ -1142,37 +1216,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PoopController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.68421054">
-          <caret line="60" column="68" selection-start-line="60" selection-start-column="68" selection-end-line="60" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.42791763">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="44" selection-end-column="9" />
           <folding>
-            <marker date="1455593695000" expanded="true" signature="44:362" placeholder="..." />
-            <marker date="1455593695000" expanded="true" signature="407:1629" placeholder="{...}" />
-            <marker date="1455593695000" expanded="true" signature="437:510" placeholder=" PoopController constructor. ..." />
-            <marker date="1455593695000" expanded="true" signature="556:597" placeholder="{...}" />
-            <marker date="1455593695000" expanded="true" signature="626:1007" placeholder="{...}" />
-            <marker date="1455593695000" expanded="true" signature="849:999" placeholder="..." />
-            <marker date="1455593695000" expanded="true" signature="861:998" placeholder="..." />
-            <marker date="1455593695000" expanded="true" signature="1036:1241" placeholder="{...}" />
-            <marker date="1455593695000" expanded="true" signature="1082:1162" placeholder="..." />
-            <marker date="1455593695000" expanded="true" signature="1269:1627" placeholder="{...}" />
-            <marker date="1455593695000" expanded="true" signature="1316:1399" placeholder="..." />
+            <element signature="e#40#81#0#PHP" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.57894737">
-          <caret line="54" column="82" selection-start-line="54" selection-start-column="82" selection-end-line="54" selection-end-column="82" />
-          <folding />
         </state>
       </provider>
     </entry>
