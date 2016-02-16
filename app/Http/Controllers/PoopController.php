@@ -69,14 +69,17 @@ class PoopController extends BaseController
         }
 
         $poop = $this->poop->currentPoop();
+        $recordPoop = $this->poop->orderBy('duration', 'desc')->first();
 
         $poop->end_at = Carbon::now();
         $poop->duration = $poop->end_at->timestamp - $poop->start_at->timestamp;
         $poop->save();
 
+        $message = $poop->duration > $recordPoop ? 'A new record!' : '';
+
         return response()->json([
             'response_type' => 'in_channel',
-            'text' => 'He is all done, that took ' . $poop->readableDuration()
+            'text' => sprintf('He is all done, that took %s. %s', $poop->readableDuration(), $message)
         ]);
     }
 }
