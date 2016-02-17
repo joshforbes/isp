@@ -112,7 +112,7 @@ class PoopController extends BaseController
         return response()->json([
             'response_type' => 'in_channel',
             'text' =>
-                "Most recent poop: $mostRecentPoop->end_at->diffForHumans().\nIt took: $mostRecentPoop->readableDuration().\nAll-time record Poop: $recordPoop->readableDuration().\nLifetime Poops: $lifetimePoops.\nAverage Poop time: $this->poop->averagePoopTime()"
+                "Most recent poop: {$mostRecentPoop->end_at->diffForHumans()}.\nIt took: {$mostRecentPoop->readableDuration()}.\nAll-time record Poop: {$recordPoop->readableDuration()}.\nLifetime Poops: {$lifetimePoops}.\nAverage Poop time: {$this->poop->averagePoopTime()}"
         ]);
     }
 }
