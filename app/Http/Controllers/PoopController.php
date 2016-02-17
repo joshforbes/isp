@@ -32,7 +32,7 @@ class PoopController extends BaseController
     {
         $isPooping = $this->poop->isPooping();
         $mostRecentPoop = $this->poop->orderBy('end_at', 'desc')->first();
-        $recordPoop = $this->poop->orderBy('duration', 'desc')->first();
+        $recordPoop = $this->poop->recordPoop();
 
         return view('welcome', [
             'isPooping' => $isPooping,
@@ -86,7 +86,7 @@ class PoopController extends BaseController
         }
 
         $poop = $this->poop->currentPoop();
-        $recordPoop = $this->poop->orderBy('duration', 'desc')->first();
+        $recordPoop = $this->poop->recordPoop();
 
         $poop->end_at = Carbon::now();
         $poop->duration = $poop->end_at->timestamp - $poop->start_at->timestamp;
@@ -112,11 +112,7 @@ class PoopController extends BaseController
         return response()->json([
             'response_type' => 'in_channel',
             'text' => sprintf(
-                'Most recent poop: %s.
-                It took: %s.\n
-                All-time record Poop: %s.
-                Lifetime Poops: %s.
-                Average Poop time: %s',
+                'Most recent poop: %s.\\nIt took: %s.\\nAll-time record Poop: %s.\\nLifetime Poops: %s.\\nAverage Poop time: %s',
                 $mostRecentPoop->end_at->diffForHumans(),
                 $mostRecentPoop->readableDuration(),
                 $recordPoop->readableDuration(),
