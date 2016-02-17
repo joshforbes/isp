@@ -113,10 +113,10 @@ class PoopController extends BaseController
             'response_type' => 'in_channel',
             'text' => sprintf(
                 'Most recent poop: %s.
-                It took: %s.
-                All-time record Poop: %s.
-                Lifetime Poops: %s.
-                Average Poop time: %s',
+            It took: %s.
+            All-time record Poop: %s.
+            Lifetime Poops: %s.
+            Average Poop time: %s',
                 $mostRecentPoop->end_at->diffForHumans(),
                 $mostRecentPoop->readableDuration(),
                 $recordPoop->readableDuration(),
