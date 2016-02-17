@@ -136,7 +136,7 @@ class PoopController extends BaseController
                             'short' => 'true'
                         ],
                         [
-                            'title' => 'All-Time Record Poop Duration',
+                            'title' => 'All-Time Record Poop',
                             'value' => $recordPoop->readableDuration(),
                         ],
                     ],
