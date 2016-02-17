@@ -111,17 +111,36 @@ class PoopController extends BaseController
 
         return response()->json([
             'response_type' => 'in_channel',
-            'text' => sprintf('Most recent poop: %s.%sIt took: %s.%sAll-time record Poop: %s.%sLifetime Poops: %s.%sAverage Poop time: %s',
-                $mostRecentPoop->end_at->diffForHumans(),
-                "\n",
-                $mostRecentPoop->readableDuration(),
-                "\n",
-                $recordPoop->readableDuration(),
-                "\n",
-                $lifetimePoops,
-                "\n",
-                $this->poop->averagePoopTime()
-            )
+            'attachments' => [
+                'text' => 'Poop Stats',
+                'fields' => [
+                    [
+                        'title' => 'Most Recent',
+                        'value' => $mostRecentPoop->end_at->diffForHumans(),
+                        'short' => 'true'
+                    ],
+                    [
+                        'title' => 'Duration',
+                        'value' => $mostRecentPoop->readableDuration(),
+                        'short' => 'true'
+                    ],
+                    [
+                        'title' => 'Lifetime Poops',
+                        'value' => $lifetimePoops,
+                        'short' => 'true'
+                    ],
+                    [
+                        'title' => 'Average Poop Time',
+                        'value' => $this->poop->averagePoopTime(),
+                        'short' => 'true'
+                    ],
+                    [
+                        'title' => 'All-Time Record Poop Time',
+                        'value' => $recordPoop->readableDuration(),
+                    ],
+                ],
+                "color" =>  "#FF0000"
+            ]
         ]);
     }
 }
