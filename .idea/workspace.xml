@@ -25,7 +25,7 @@
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PoopController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.54805493">
-              <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+              <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
               <folding>
                 <element signature="e#40#81#0#PHP" expanded="true" />
               </folding>
@@ -1259,7 +1259,7 @@
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PoopController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54805493">
-          <caret line="50" column="29" selection-start-line="50" selection-start-column="29" selection-end-line="50" selection-end-column="29" />
+          <caret line="50" column="31" selection-start-line="50" selection-start-column="31" selection-end-line="50" selection-end-column="31" />
           <folding>
             <element signature="e#40#81#0#PHP" expanded="true" />
           </folding>
