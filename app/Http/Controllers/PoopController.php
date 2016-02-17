@@ -75,7 +75,7 @@ class PoopController extends BaseController
         $poop->duration = $poop->end_at->timestamp - $poop->start_at->timestamp;
         $poop->save();
 
-        $message = $poop->duration > $recordPoop ? 'A new record!' : '';
+        $message = $poop->duration > $recordPoop->duration ? 'A new record!' : '';
 
         return response()->json([
             'response_type' => 'in_channel',
