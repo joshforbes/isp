@@ -99,7 +99,7 @@ class Poop extends Model
      */
     public function recordPoop()
     {
-        return $this->poop->orderBy('duration', 'desc')->first();
+        return $this->orderBy('duration', 'desc')->first();
     }
 
 }

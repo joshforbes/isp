@@ -21,12 +21,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <file leaf-file-name="PoopController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PoopController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13157895">
-              <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-              <folding />
+            <state vertical-scroll-proportion="0.6464531">
+              <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+              <folding>
+                <element signature="e#40#81#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,9 +52,9 @@
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/.env.example" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/app/Poop.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PoopController.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -1187,36 +1189,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Poop.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8684211">
-          <caret line="101" column="43" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
-          <folding>
-            <marker date="1455674240000" expanded="true" signature="27:108" placeholder="..." />
-            <marker date="1455674240000" expanded="true" signature="134:1940" placeholder="{...}" />
-            <marker date="1455674240000" expanded="true" signature="166:245" placeholder=" The attributes that are mass assignable. ..." />
-            <marker date="1455674240000" expanded="true" signature="275:338" placeholder="..." />
-            <marker date="1455674240000" expanded="true" signature="349:432" placeholder=" The attributes that should be cast to dates. ..." />
-            <marker date="1455674240000" expanded="true" signature="459:523" placeholder="..." />
-            <marker date="1455674240000" expanded="true" signature="534:612" placeholder=" Get poop time in a readable format. ..." />
-            <marker date="1455674240000" expanded="true" signature="653:831" placeholder="{...}" />
-            <marker date="1455674240000" expanded="true" signature="840:866" placeholder=" @return bool ..." />
-            <marker date="1455674240000" expanded="true" signature="900:1057" placeholder="{...}" />
-            <marker date="1455674240000" expanded="true" signature="993:1027" placeholder="..." />
-            <marker date="1455674240000" expanded="true" signature="1066:1093" placeholder=" @return mixed ..." />
-            <marker date="1455674240000" expanded="true" signature="1129:1193" placeholder="{...}" />
-            <marker date="1455674240000" expanded="true" signature="1202:1227" placeholder=" @return int ..." />
-            <marker date="1455674240000" expanded="true" signature="1264:1312" placeholder="{...}" />
-            <marker date="1455674240000" expanded="true" signature="1321:1349" placeholder=" @return string ..." />
-            <marker date="1455674240000" expanded="true" signature="1389:1788" placeholder="{...}" />
-            <marker date="1455674240000" expanded="true" signature="1500:1582" placeholder="..." />
-            <marker date="1455674240000" expanded="true" signature="1526:1581" placeholder="..." />
-            <marker date="1455674240000" expanded="true" signature="1797:1824" placeholder=" @return mixed ..." />
-            <marker date="1455674240000" expanded="true" signature="1859:1937" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.059496567">
@@ -1244,51 +1216,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PoopController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6052632">
-          <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.21052632">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <marker date="1455674793000" expanded="true" signature="44:362" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="407:3832" placeholder="{...}" />
-            <marker date="1455674793000" expanded="true" signature="437:510" placeholder=" PoopController constructor. ..." />
-            <marker date="1455674793000" expanded="true" signature="556:597" placeholder="{...}" />
-            <marker date="1455674793000" expanded="true" signature="606:684" placeholder=" @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View ..." />
-            <marker date="1455674793000" expanded="true" signature="714:1220" placeholder="{...}" />
-            <marker date="1455674793000" expanded="true" signature="937:1212" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="949:1211" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="1229:1280" placeholder=" @return \Illuminate\Http\JsonResponse ..." />
-            <marker date="1455674793000" expanded="true" signature="1310:1945" placeholder="{...}" />
-            <marker date="1455674793000" expanded="true" signature="1370:1470" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="1512:1702" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="1549:1691" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="1550:1690" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="1733:1777" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="1734:1776" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="1813:1937" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="1814:1936" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="1954:2005" placeholder=" @return \Illuminate\Http\JsonResponse ..." />
-            <marker date="1455674793000" expanded="true" signature="2034:2978" placeholder="{...}" />
-            <marker date="1455674793000" expanded="true" signature="2094:2194" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="2237:2430" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="2274:2419" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="2275:2418" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="2811:2970" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="2812:2969" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="2987:3038" placeholder=" @return \Illuminate\Http\JsonResponse ..." />
-            <marker date="1455674793000" expanded="true" signature="3068:3830" placeholder="{...}" />
-            <marker date="1455674793000" expanded="true" signature="3286:3822" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="3287:3821" placeholder="..." />
-            <marker date="1455674793000" expanded="true" signature="3363:3811" placeholder="..." />
+            <marker date="1455674924000" expanded="false" signature="9:383" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+    <entry file="file://$PROJECT_DIR$/app/Poop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13157895">
-          <caret line="14" column="42" selection-start-line="14" selection-start-column="42" selection-end-line="14" selection-end-column="42" />
-          <folding />
+        <state vertical-scroll-proportion="0.4771167">
+          <caret line="90" column="16" selection-start-line="90" selection-start-column="16" selection-end-line="90" selection-end-column="16" />
+          <folding>
+            <marker date="1455675031000" expanded="true" signature="27:108" placeholder="..." />
+            <marker date="1455675031000" expanded="true" signature="134:1934" placeholder="{...}" />
+            <marker date="1455675031000" expanded="true" signature="166:245" placeholder=" The attributes that are mass assignable. ..." />
+            <marker date="1455675031000" expanded="true" signature="275:338" placeholder="..." />
+            <marker date="1455675031000" expanded="true" signature="349:432" placeholder=" The attributes that should be cast to dates. ..." />
+            <marker date="1455675031000" expanded="true" signature="459:523" placeholder="..." />
+            <marker date="1455675031000" expanded="true" signature="534:612" placeholder=" Get poop time in a readable format. ..." />
+            <marker date="1455675031000" expanded="true" signature="653:831" placeholder="{...}" />
+            <marker date="1455675031000" expanded="true" signature="840:866" placeholder=" @return bool ..." />
+            <marker date="1455675031000" expanded="true" signature="900:1057" placeholder="{...}" />
+            <marker date="1455675031000" expanded="true" signature="993:1027" placeholder="..." />
+            <marker date="1455675031000" expanded="true" signature="1066:1093" placeholder=" @return mixed ..." />
+            <marker date="1455675031000" expanded="true" signature="1129:1193" placeholder="{...}" />
+            <marker date="1455675031000" expanded="true" signature="1202:1227" placeholder=" @return int ..." />
+            <marker date="1455675031000" expanded="true" signature="1264:1312" placeholder="{...}" />
+            <marker date="1455675031000" expanded="true" signature="1321:1349" placeholder=" @return string ..." />
+            <marker date="1455675031000" expanded="true" signature="1389:1788" placeholder="{...}" />
+            <marker date="1455675031000" expanded="true" signature="1500:1582" placeholder="..." />
+            <marker date="1455675031000" expanded="true" signature="1526:1581" placeholder="..." />
+            <marker date="1455675031000" expanded="true" signature="1797:1824" placeholder=" @return mixed ..." />
+            <marker date="1455675031000" expanded="true" signature="1859:1931" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PoopController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6464531">
+          <caret line="113" column="28" selection-start-line="113" selection-start-column="28" selection-end-line="113" selection-end-column="28" />
+          <folding>
+            <element signature="e#40#81#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
