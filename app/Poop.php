@@ -44,6 +44,9 @@ class Poop extends Model
         return sprintf('%s minutes %s seconds', $minutes, $seconds);
     }
 
+    /**
+     * @return bool
+     */
     public function isPooping()
     {
         $activePoop = $this->whereNull('end_at')->first();
@@ -55,16 +58,25 @@ class Poop extends Model
         return false;
     }
 
+    /**
+     * @return mixed
+     */
     public function currentPoop()
     {
         return $this->whereNull('end_at')->first();
     }
 
+    /**
+     * @return int
+     */
     public function allTimePoops()
     {
         return count($this->all());
     }
 
+    /**
+     * @return string
+     */
     public function averagePoopTime()
     {
         $poops = $this->all();
@@ -80,6 +92,14 @@ class Poop extends Model
         $minutes = floor(($average % 3600)/60);
 
         return sprintf('%s minutes %s seconds', $minutes, $seconds);
+    }
+
+    /**
+     * @return mixed
+     */
+    public function recordPoop()
+    {
+        return $this->poop->orderBy('duration', 'desc')->first();
     }
 
 }

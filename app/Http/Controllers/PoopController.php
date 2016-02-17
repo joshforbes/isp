@@ -25,6 +25,9 @@ class PoopController extends BaseController
         $this->poop = $poop;
     }
 
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     */
     public function index()
     {
         $isPooping = $this->poop->isPooping();
@@ -40,6 +43,9 @@ class PoopController extends BaseController
         ]);
     }
 
+    /**
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function start()
     {
         if (request('token') != env('SLACK_TOKEN')) {
@@ -63,6 +69,9 @@ class PoopController extends BaseController
         ]);
     }
 
+    /**
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function stop()
     {
         if (request('token') != env('SLACK_TOKEN')) {
@@ -88,6 +97,32 @@ class PoopController extends BaseController
         return response()->json([
             'response_type' => 'in_channel',
             'text' => sprintf('He is all done, that took %s. %s', $poop->readableDuration(), $message)
+        ]);
+    }
+
+    /**
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function stats()
+    {
+        $recordPoop = $this->poop->recordPoop();
+        $lifetimePoops = $this->poop->allTimePoops();
+        $mostRecentPoop = $this->poop->orderBy('end_at', 'desc')->first();
+
+        return response()->json([
+            'response_type' => 'in_channel',
+            'text' => sprintf(
+                'Most recent poop: %s.\n
+                It took: %s.\n\n
+                All-time record Poop: %s.\n
+                Lifetime Poops: %s.\n
+                Average Poop time: %s',
+                $mostRecentPoop->end_at->diffForHumans(),
+                $mostRecentPoop->readableDuration(),
+                $recordPoop->readableDuration(),
+                $lifetimePoops,
+                $this->poop->averagePoopTime()
+            )
         ]);
     }
 }

@@ -21,14 +21,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="PoopController.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PoopController.php">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47368422">
-              <caret line="68" column="52" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
-              <folding>
-                <element signature="e#40#81#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.13157895">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -49,12 +47,12 @@
         <option value="$PROJECT_DIR$/app/Exceptions/IsNotCurrentlyPooping.php" />
         <option value="$PROJECT_DIR$/config/app.php" />
         <option value="$PROJECT_DIR$/database/migrations/2014_10_12_100000_create_poops_table.php" />
-        <option value="$PROJECT_DIR$/app/Poop.php" />
         <option value="$PROJECT_DIR$/resources/views/welcome.blade.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/.env.example" />
+        <option value="$PROJECT_DIR$/app/Poop.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/PoopController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
       </list>
     </option>
   </component>
@@ -1152,33 +1150,76 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Routing/ResponseFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35354692">
+          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+          <folding>
+            <marker date="1455558418000" expanded="true" signature="73:3874" placeholder="{...}" />
+            <marker date="1455558418000" expanded="true" signature="83:279" placeholder=" Return a new response from the application. ..." />
+            <marker date="1455558418000" expanded="true" signature="367:593" placeholder=" Return a new view response from the application. ..." />
+            <marker date="1455558418000" expanded="true" signature="685:922" placeholder=" Return a new JSON response from the application. ..." />
+            <marker date="1455558418000" expanded="true" signature="1021:1292" placeholder=" Return a new JSONP response from the application. ..." />
+            <marker date="1455558418000" expanded="true" signature="1403:1636" placeholder=" Return a new streamed response from the application. ..." />
+            <marker date="1455558418000" expanded="true" signature="1722:1990" placeholder=" Create a new file download response. ..." />
+            <marker date="1455558418000" expanded="true" signature="2102:2343" placeholder=" Create a new redirect response to the given path. ..." />
+            <marker date="1455558418000" expanded="true" signature="2439:2680" placeholder=" Create a new redirect response to a named route. ..." />
+            <marker date="1455558418000" expanded="true" signature="2784:3032" placeholder=" Create a new redirect response to a controller action. ..." />
+            <marker date="1455558418000" expanded="true" signature="3138:3407" placeholder=" Create a new redirect response, while putting the current URL in the session. ..." />
+            <marker date="1455558418000" expanded="true" signature="3506:3768" placeholder=" Create a new redirect response to the previously intended location. ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env.example">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.61333334">
+          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6388889">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Poop.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.65789473">
-          <caret line="73" column="26" selection-start-line="73" selection-start-column="26" selection-end-line="73" selection-end-column="26" />
+        <state vertical-scroll-proportion="0.8684211">
+          <caret line="101" column="43" selection-start-line="101" selection-start-column="43" selection-end-line="101" selection-end-column="43" />
           <folding>
-            <marker date="1455601576000" expanded="true" signature="27:108" placeholder="..." />
-            <marker date="1455601576000" expanded="true" signature="134:1645" placeholder="{...}" />
-            <marker date="1455601576000" expanded="true" signature="166:245" placeholder=" The attributes that are mass assignable. ..." />
-            <marker date="1455601576000" expanded="true" signature="275:338" placeholder="..." />
-            <marker date="1455601576000" expanded="true" signature="349:432" placeholder=" The attributes that should be cast to dates. ..." />
-            <marker date="1455601576000" expanded="true" signature="459:523" placeholder="..." />
-            <marker date="1455601576000" expanded="true" signature="534:612" placeholder=" Get poop time in a readable format. ..." />
-            <marker date="1455601576000" expanded="true" signature="653:831" placeholder="{...}" />
-            <marker date="1455601576000" expanded="true" signature="864:1021" placeholder="{...}" />
-            <marker date="1455601576000" expanded="true" signature="957:991" placeholder="..." />
-            <marker date="1455601576000" expanded="true" signature="1056:1120" placeholder="{...}" />
-            <marker date="1455601576000" expanded="true" signature="1156:1204" placeholder="{...}" />
-            <marker date="1455601576000" expanded="true" signature="1243:1642" placeholder="{...}" />
-            <marker date="1455601576000" expanded="true" signature="1354:1436" placeholder="..." />
-            <marker date="1455601576000" expanded="true" signature="1380:1435" placeholder="..." />
+            <marker date="1455674240000" expanded="true" signature="27:108" placeholder="..." />
+            <marker date="1455674240000" expanded="true" signature="134:1940" placeholder="{...}" />
+            <marker date="1455674240000" expanded="true" signature="166:245" placeholder=" The attributes that are mass assignable. ..." />
+            <marker date="1455674240000" expanded="true" signature="275:338" placeholder="..." />
+            <marker date="1455674240000" expanded="true" signature="349:432" placeholder=" The attributes that should be cast to dates. ..." />
+            <marker date="1455674240000" expanded="true" signature="459:523" placeholder="..." />
+            <marker date="1455674240000" expanded="true" signature="534:612" placeholder=" Get poop time in a readable format. ..." />
+            <marker date="1455674240000" expanded="true" signature="653:831" placeholder="{...}" />
+            <marker date="1455674240000" expanded="true" signature="840:866" placeholder=" @return bool ..." />
+            <marker date="1455674240000" expanded="true" signature="900:1057" placeholder="{...}" />
+            <marker date="1455674240000" expanded="true" signature="993:1027" placeholder="..." />
+            <marker date="1455674240000" expanded="true" signature="1066:1093" placeholder=" @return mixed ..." />
+            <marker date="1455674240000" expanded="true" signature="1129:1193" placeholder="{...}" />
+            <marker date="1455674240000" expanded="true" signature="1202:1227" placeholder=" @return int ..." />
+            <marker date="1455674240000" expanded="true" signature="1264:1312" placeholder="{...}" />
+            <marker date="1455674240000" expanded="true" signature="1321:1349" placeholder=" @return string ..." />
+            <marker date="1455674240000" expanded="true" signature="1389:1788" placeholder="{...}" />
+            <marker date="1455674240000" expanded="true" signature="1500:1582" placeholder="..." />
+            <marker date="1455674240000" expanded="true" signature="1526:1581" placeholder="..." />
+            <marker date="1455674240000" expanded="true" signature="1797:1824" placeholder=" @return mixed ..." />
+            <marker date="1455674240000" expanded="true" signature="1859:1937" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.50800914">
+        <state vertical-scroll-proportion="0.059496567">
           <caret line="46" column="13" selection-start-line="46" selection-start-column="13" selection-end-line="46" selection-end-column="13" />
           <folding>
             <marker date="1455601680000" expanded="true" signature="21:2257" placeholder="..." />
@@ -1203,60 +1244,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/laravel/framework/src/Illuminate/Contracts/Routing/ResponseFactory.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PoopController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35354692">
-          <caret line="36" column="20" selection-start-line="36" selection-start-column="20" selection-end-line="36" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.6052632">
+          <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
           <folding>
-            <marker date="1455558418000" expanded="true" signature="73:3874" placeholder="{...}" />
-            <marker date="1455558418000" expanded="true" signature="83:279" placeholder=" Return a new response from the application. ..." />
-            <marker date="1455558418000" expanded="true" signature="367:593" placeholder=" Return a new view response from the application. ..." />
-            <marker date="1455558418000" expanded="true" signature="685:922" placeholder=" Return a new JSON response from the application. ..." />
-            <marker date="1455558418000" expanded="true" signature="1021:1292" placeholder=" Return a new JSONP response from the application. ..." />
-            <marker date="1455558418000" expanded="true" signature="1403:1636" placeholder=" Return a new streamed response from the application. ..." />
-            <marker date="1455558418000" expanded="true" signature="1722:1990" placeholder=" Create a new file download response. ..." />
-            <marker date="1455558418000" expanded="true" signature="2102:2343" placeholder=" Create a new redirect response to the given path. ..." />
-            <marker date="1455558418000" expanded="true" signature="2439:2680" placeholder=" Create a new redirect response to a named route. ..." />
-            <marker date="1455558418000" expanded="true" signature="2784:3032" placeholder=" Create a new redirect response to a controller action. ..." />
-            <marker date="1455558418000" expanded="true" signature="3138:3407" placeholder=" Create a new redirect response, while putting the current URL in the session. ..." />
-            <marker date="1455558418000" expanded="true" signature="3506:3768" placeholder=" Create a new redirect response to the previously intended location. ..." />
+            <marker date="1455674793000" expanded="true" signature="44:362" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="407:3832" placeholder="{...}" />
+            <marker date="1455674793000" expanded="true" signature="437:510" placeholder=" PoopController constructor. ..." />
+            <marker date="1455674793000" expanded="true" signature="556:597" placeholder="{...}" />
+            <marker date="1455674793000" expanded="true" signature="606:684" placeholder=" @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View ..." />
+            <marker date="1455674793000" expanded="true" signature="714:1220" placeholder="{...}" />
+            <marker date="1455674793000" expanded="true" signature="937:1212" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="949:1211" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="1229:1280" placeholder=" @return \Illuminate\Http\JsonResponse ..." />
+            <marker date="1455674793000" expanded="true" signature="1310:1945" placeholder="{...}" />
+            <marker date="1455674793000" expanded="true" signature="1370:1470" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="1512:1702" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="1549:1691" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="1550:1690" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="1733:1777" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="1734:1776" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="1813:1937" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="1814:1936" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="1954:2005" placeholder=" @return \Illuminate\Http\JsonResponse ..." />
+            <marker date="1455674793000" expanded="true" signature="2034:2978" placeholder="{...}" />
+            <marker date="1455674793000" expanded="true" signature="2094:2194" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="2237:2430" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="2274:2419" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="2275:2418" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="2811:2970" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="2812:2969" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="2987:3038" placeholder=" @return \Illuminate\Http\JsonResponse ..." />
+            <marker date="1455674793000" expanded="true" signature="3068:3830" placeholder="{...}" />
+            <marker date="1455674793000" expanded="true" signature="3286:3822" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="3287:3821" placeholder="..." />
+            <marker date="1455674793000" expanded="true" signature="3363:3811" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15789473">
-          <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-          <folding>
-            <marker date="1455602180000" expanded="false" signature="9:383" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env.example">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61333334">
-          <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        <state vertical-scroll-proportion="0.13157895">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6388889">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PoopController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47368422">
-          <caret line="68" column="52" selection-start-line="68" selection-start-column="52" selection-end-line="68" selection-end-column="52" />
-          <folding>
-            <element signature="e#40#81#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
