@@ -42,6 +42,10 @@ class PoopController extends BaseController
 
     public function start()
     {
+        if (request('token') != env('SLACK_TOKEN')) {
+            return response()->json('This only works from the appropriate Slack channel');
+        }
+
         if ($this->poop->isPooping()) {
             return response()->json([
                 'response_type' => 'in_channel',
@@ -61,7 +65,10 @@ class PoopController extends BaseController
 
     public function stop()
     {
-        return request('token');
+        if (request('token') != env('SLACK_TOKEN')) {
+            return response()->json('This only works from the appropriate Slack channel');
+        }
+
         if (!$this->poop->isPooping()) {
             return response()->json([
                 'response_type' => 'in_channel',
