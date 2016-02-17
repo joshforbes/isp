@@ -116,12 +116,12 @@ class PoopController extends BaseController
                     'title' => 'Poop Stats',
                     'fields' => [
                         [
-                            'title' => 'Most Recent',
+                            'title' => 'Most Recent Poop',
                             'value' => $mostRecentPoop->end_at->diffForHumans(),
                             'short' => 'true'
                         ],
                         [
-                            'title' => 'Duration',
+                            'title' => 'Most Recent Poop Duration',
                             'value' => $mostRecentPoop->readableDuration(),
                             'short' => 'true'
                         ],
@@ -131,12 +131,12 @@ class PoopController extends BaseController
                             'short' => 'true'
                         ],
                         [
-                            'title' => 'Average Poop Time',
+                            'title' => 'Average Poop Duration',
                             'value' => $this->poop->averagePoopTime(),
                             'short' => 'true'
                         ],
                         [
-                            'title' => 'All-Time Record Poop Time',
+                            'title' => 'All-Time Record Poop Duration',
                             'value' => $recordPoop->readableDuration(),
                         ],
                     ],
