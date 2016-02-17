@@ -61,6 +61,7 @@ class PoopController extends BaseController
 
     public function stop()
     {
+        return request('token');
         if (!$this->poop->isPooping()) {
             return response()->json([
                 'response_type' => 'in_channel',
