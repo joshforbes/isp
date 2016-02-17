@@ -48,6 +48,7 @@ class PoopController extends BaseController
      */
     public function start()
     {
+        dd(request('token'));
         if (request('token') != env('SLACK_TOKEN')) {
             return response()->json('This only works from the appropriate Slack channel');
         }
