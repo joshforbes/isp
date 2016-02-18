@@ -103,6 +103,32 @@ class PoopController extends BaseController
     /**
      * @return \Illuminate\Http\JsonResponse
      */
+    public function cancel()
+    {
+        if (request('token') != env('SLACK_CANCEL_TOKEN')) {
+            return response()->json('This only works from the appropriate Slack channel');
+        }
+
+        if (!$this->poop->isPooping()) {
+            return response()->json([
+                'response_type' => 'in_channel',
+                'text' => 'Can\'t cancel a poop. Stuart is not currently Pooping.'
+            ]);
+        }
+
+        $poop = $this->poop->currentPoop();
+        $poop->delete();
+
+
+        return response()->json([
+            'response_type' => 'in_channel',
+            'text' => 'Cancel that poop, we were wrong.'
+        ]);
+    }
+
+    /**
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function stats()
     {
         $recordPoop = $this->poop->recordPoop();

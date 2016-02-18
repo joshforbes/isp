@@ -14,4 +14,5 @@
 Route::get('/', 'PoopController@index');
 Route::get('/stats', 'PoopController@stats');
 Route::post('/start', 'PoopController@start');
+Route::post('/cancel', 'PoopController@cancel');
 Route::post('/stop', 'PoopController@stop');
