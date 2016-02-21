@@ -11,6 +11,9 @@
 |
 */
 
+Route::get('/', function () {
+    return '';
+});
 Route::get('/stats/{type}', 'EntryController@stats');
 Route::get('/start/{type}', 'EntryController@start');
 Route::get('/cancel/{type}', 'EntryController@cancel');
