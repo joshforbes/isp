@@ -119,7 +119,7 @@ class EntryController extends BaseController
                 'text' => 'You must specify a type.'
             ]);
         }
-        
+
         if (!$this->entry->isActive($type)) {
             return response()->json([
                 'response_type' => 'in_channel',
@@ -166,7 +166,7 @@ class EntryController extends BaseController
             'response_type' => 'in_channel',
             'attachments' => [
                 [
-                    'title' => 'Stats for' . $type,
+                    'title' => 'Stats for ' . $type,
                     'fields' => [
                         [
                             'title' => 'Most Recent',
