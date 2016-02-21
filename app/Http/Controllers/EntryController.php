@@ -30,9 +30,9 @@ class EntryController extends BaseController
      */
     public function start($type)
     {
-//        if (request('token') != env('SLACK_START_TOKEN')) {
-//            return response()->json('This only works from the appropriate Slack channel');
-//        }
+        if (request('token') != env('SLACK_START_TOKEN')) {
+            return response()->json('This only works from the appropriate Slack channel');
+        }
 
         if ($this->entry->isActive($type)) {
             return response()->json([
@@ -59,9 +59,9 @@ class EntryController extends BaseController
      */
     public function stop($type)
     {
-//        if (request('token') != env('SLACK_STOP_TOKEN')) {
-//            return response()->json('This only works from the appropriate Slack channel');
-//        }
+        if (request('token') != env('SLACK_STOP_TOKEN')) {
+            return response()->json('This only works from the appropriate Slack channel');
+        }
 
         if (!$this->entry->isActive($type)) {
             return response()->json([
@@ -95,9 +95,9 @@ class EntryController extends BaseController
      */
     public function cancel($type)
     {
-//        if (request('token') != env('SLACK_CANCEL_TOKEN')) {
-//            return response()->json('This only works from the appropriate Slack channel');
-//        }
+        if (request('token') != env('SLACK_CANCEL_TOKEN')) {
+            return response()->json('This only works from the appropriate Slack channel');
+        }
 
         if (!$this->entry->isActive($type)) {
             return response()->json([
