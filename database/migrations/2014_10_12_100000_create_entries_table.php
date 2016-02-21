@@ -3,7 +3,7 @@
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePoopsTable extends Migration
+class CreateEntriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -12,9 +12,10 @@ class CreatePoopsTable extends Migration
      */
     public function up()
     {
-        Schema::create('poops', function (Blueprint $table) {
+        Schema::create('entries', function (Blueprint $table) {
             $table->increments('id');
 
+            $table->string('type');
             $table->integer('duration')->nullable();
 
             $table->dateTime('start_at');
@@ -33,6 +34,6 @@ class CreatePoopsTable extends Migration
      */
     public function down()
     {
-        Schema::drop('poops');
+        Schema::drop('entries');
     }
 }

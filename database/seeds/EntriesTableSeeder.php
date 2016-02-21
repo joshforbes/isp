@@ -1,9 +1,9 @@
 <?php
 
-use App\Poop;
+use App\Entry;
 use Illuminate\Database\Seeder;
 
-class PoopsTableSeeder extends Seeder
+class EntriesTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +12,6 @@ class PoopsTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(Poop::class, 50)->create();
+        factory(Entry::class, 50)->create();
     }
 }

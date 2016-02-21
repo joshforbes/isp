@@ -26,7 +26,4 @@
     <ConfirmationsSetting value="0" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
-  <component name="ProjectPlainTextFileTypeManager">
-    <file url="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-  </component>
 </project>

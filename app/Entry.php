@@ -5,7 +5,7 @@ namespace App;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Poop extends Model
+class Entry extends Model
 {
     use SoftDeletes;
 
@@ -15,6 +15,7 @@ class Poop extends Model
      * @var array
      */
     protected $fillable = [
+        'type',
         'duration',
         'start_at',
         'end_at',
@@ -45,13 +46,15 @@ class Poop extends Model
     }
 
     /**
+     * @param $type
+     *
      * @return bool
      */
-    public function isPooping()
+    public function isActive($type)
     {
-        $activePoop = $this->whereNull('end_at')->first();
+        $active = $this->where('type', $type)->whereNull('end_at')->first();
 
-        if ($activePoop) {
+        if ($active) {
             return true;
         }
 
@@ -59,30 +62,36 @@ class Poop extends Model
     }
 
     /**
+     * @param $type
+     *
      * @return mixed
      */
-    public function currentPoop()
+    public function active($type)
     {
-        return $this->whereNull('end_at')->first();
+        return $this->where('type', $type)->whereNull('end_at')->first();
     }
 
     /**
+     * @param $type
+     *
      * @return int
      */
-    public function allTimePoops()
+    public function allTime($type)
     {
-        return count($this->all());
+        return count($this->where('type', $type)->get());
     }
 
     /**
+     * @param $type
+     *
      * @return string
      */
-    public function averagePoopTime()
+    public function averageTime($type)
     {
-        $poops = $this->all();
-        $count = count($poops);
+        $entries = $this->where('type', $type)->get();
+        $count = count($entries);
 
-        $totalDuration = $poops->reduce(function($carry, $value) {
+        $totalDuration = $entries->reduce(function($carry, $value) {
             return $carry + $value->duration;
         });
 
@@ -97,9 +106,9 @@ class Poop extends Model
     /**
      * @return mixed
      */
-    public function recordPoop()
+    public function record($type)
     {
-        return $this->orderBy('duration', 'desc')->first();
+        return $this->where('type', $type)->orderBy('duration', 'desc')->first();
     }
 
 }
