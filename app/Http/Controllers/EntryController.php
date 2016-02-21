@@ -24,14 +24,21 @@ class EntryController extends BaseController
     }
 
     /**
-     * @param $type
-     *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function start($type)
+    public function start()
     {
         if (request('token') != env('SLACK_START_TOKEN')) {
             return response()->json('This only works from the appropriate Slack channel');
+        }
+
+        $type = request()->text;
+
+        if (!$type) {
+            return response()->json([
+                'response_type' => 'in_channel',
+                'text' => 'You must specify a type.'
+            ]);
         }
 
         if ($this->entry->isActive($type)) {
@@ -53,14 +60,21 @@ class EntryController extends BaseController
     }
 
     /**
-     * @param $type
-     *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function stop($type)
+    public function stop()
     {
         if (request('token') != env('SLACK_STOP_TOKEN')) {
             return response()->json('This only works from the appropriate Slack channel');
+        }
+
+        $type = request()->text;
+
+        if (!$type) {
+            return response()->json([
+                'response_type' => 'in_channel',
+                'text' => 'You must specify a type.'
+            ]);
         }
 
         if (!$this->entry->isActive($type)) {
@@ -89,16 +103,23 @@ class EntryController extends BaseController
     }
 
     /**
-     * @param $type
-     *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function cancel($type)
+    public function cancel()
     {
         if (request('token') != env('SLACK_CANCEL_TOKEN')) {
             return response()->json('This only works from the appropriate Slack channel');
         }
 
+        $type = request()->text;
+
+        if (!$type) {
+            return response()->json([
+                'response_type' => 'in_channel',
+                'text' => 'You must specify a type.'
+            ]);
+        }
+        
         if (!$this->entry->isActive($type)) {
             return response()->json([
                 'response_type' => 'in_channel',
@@ -117,12 +138,19 @@ class EntryController extends BaseController
     }
 
     /**
-     * @param $type
-     *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function stats($type)
+    public function stats()
     {
+        $type = request()->text;
+
+        if (!$type) {
+            return response()->json([
+                'response_type' => 'in_channel',
+                'text' => 'You must specify a type.'
+            ]);
+        }
+
         try {
             $record = $this->entry->record($type);
             $lifetime = $this->entry->allTime($type);

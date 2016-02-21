@@ -14,7 +14,7 @@
 Route::get('/', function () {
     return '';
 });
-Route::get('/stats/{type}', 'EntryController@stats');
-Route::get('/start/{type}', 'EntryController@start');
-Route::get('/cancel/{type}', 'EntryController@cancel');
-Route::get('/stop/{type}', 'EntryController@stop');
+Route::get('/stats', 'EntryController@stats');
+Route::get('/start', 'EntryController@start');
+Route::get('/cancel', 'EntryController@cancel');
+Route::get('/stop', 'EntryController@stop');
